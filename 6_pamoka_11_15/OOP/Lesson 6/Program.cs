@@ -18,12 +18,13 @@ namespace Lesson_6
 }
     public class Bot
     {
+        static string path = @"D:\Saugykla\Karolis Medekša\Pamokos\5_pamoka_11_08\chatBot.txt";
         private Dictionary<string, string> dictionary = new Dictionary<string, string>();
 
         public void AddToDictionary(string key, string value)
         {
             dictionary.Add(key, value);
-            File.AppendAllText(@"D:\Saugykla\Karolis Medekša\Pamokos\5_pamoka_11_08\chatBot.txt", Environment.NewLine + key + "~" + value);
+            File.AppendAllText(path, Environment.NewLine + key + "~" + value);
         }
 
         private string[] lines;
