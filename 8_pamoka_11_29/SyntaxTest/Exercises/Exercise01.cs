@@ -11,5 +11,12 @@
           Konstruktoriaus vardas visada sutampa su klasės pavadinimu.
           Parametrų vardai rašomi iš mažosios raidės. Parametro pavadinime antras žodis rašomas iš didžiosios raidės. Toks rašymo būdas vadinamas "Camel Case".
         */
+
+        private int _potatoCount;
+
+        public Exercise01(int potatoCount)
+        {
+            _potatoCount = potatoCount;
+        }
     }
 }

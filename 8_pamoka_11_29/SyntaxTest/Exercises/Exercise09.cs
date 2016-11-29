@@ -9,5 +9,9 @@ namespace SyntaxTest.Exercises
           Point tipas yra System.Drawing katalogo klasė, kuri aprašo vieną tašką, kuris turi x ir y koordinates.
           Šis metodas turi turėti du parametrus: int tipo parametrą xCoordinate ir int tipo parametrą yCoordinate.
         */
+        public Point GetPoint(int xCoordinate, int yCoordinate)
+        {
+            return new Point(xCoordinate, yCoordinate);
+        }
     }
 }

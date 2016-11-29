@@ -8,5 +8,6 @@
           Properčiai C# kalboje yra traktuojami kaip metodai. Vienas propertis atstoja du metodus kurie yra vadinami geteriu (getter) ir seteriu (setter). 
           Geteris grąžina reikšmę, seteris ją įrašo. Jei padarysite klaidą aprašant propertį, tai klaida bus vaizduojama kaip neteisingas metodas.
         */
+        public string MyName { get; set; }
     }
 }

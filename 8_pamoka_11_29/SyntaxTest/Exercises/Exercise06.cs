@@ -5,5 +5,9 @@
         /*
           Parašykite viešą metodą pavadinimu GetAnswerToAllQuestions, kuris grąžina int tipo rezultatą. Šis metodas neturi turėti jokių parametrų.
         */
+        public int GetAnswerToAllQuestions()
+        {
+            return 0;
+        }
     }
 }
