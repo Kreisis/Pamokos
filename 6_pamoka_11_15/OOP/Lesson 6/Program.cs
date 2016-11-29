@@ -7,8 +7,12 @@ using System.Threading.Tasks;
 
 namespace Lesson_6
 {
-    public class AnswerMachine { 
+    public class AnswerMachine {
         DateTime time;
+        public DateTime ReturnTime()
+        {
+            return time;
+        }
         public string Answer { get; private set; }
         public AnswerMachine(string ats)
         {
@@ -95,7 +99,7 @@ namespace Lesson_6
                     }
                     continue;
                 }
-                Console.WriteLine(ansMachine.Answer);
+                Console.WriteLine(ansMachine.ReturnTime() + " " + ansMachine.Answer);
             }
 
             Console.ReadLine();
