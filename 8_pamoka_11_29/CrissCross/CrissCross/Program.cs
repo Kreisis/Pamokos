@@ -28,13 +28,24 @@ namespace CrissCross
                 {
                     player = "0";
                 }
-                string[] input = Console.ReadLine().Split(' ');
+                while (true)
+                {
+                    string[] input = Console.ReadLine().Split(' ');
 
-                int x = Convert.ToInt16(input[1]);
-                int y = Convert.ToInt16(input[0]);
+                    int x = Convert.ToInt16(input[1]);
+                    int y = Convert.ToInt16(input[0]);
 
-                board[x, y] = Convert.ToChar(player);
-
+                    if (board[x, y] == '#')
+                    {
+                        board[x, y] = Convert.ToChar(player);
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Cell already occupied!");                     
+                    }
+                }
+                
                 bool temp = CheckForWinner(board, Convert.ToChar(player));
                 if (temp == true)
                 {
