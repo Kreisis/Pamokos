@@ -10,7 +10,6 @@ namespace CodeFights.samples
                             .AddAttack(Area.Nose)
                             .AddAttack(Area.Nose)
                             .AddDefence(Area.Nose);
-
             return move;
         }
     }
